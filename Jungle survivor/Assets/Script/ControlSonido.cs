@@ -24,6 +24,14 @@ public class ControlSonido : MonoBehaviour
         }
     }
 
-    
+    public void Pause(){
+        Debug.Log("BUTTON -> Pause");       
+        Time.timeScale = 0f;
+    }
+
+public void Resume(){
+        Debug.Log("BUTTON -> Resume");        
+        Time.timeScale = 1f;
+}
     
 }
